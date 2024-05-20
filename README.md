@@ -8,14 +8,14 @@ We made a code that transform Fasta file into Nexus file and then, we tested eac
 Function read_file(fasta_file)
 ```
 def read_fasta(fasta_file): #this function takes a fasta file you want to read
-    sequences = {} '''it starts with an empty dictionary called sequences to store the name as a key, and the sequences                                as a value'''
+    sequences = {} '''it starts with an empty dictionary called sequences to store the name as a key, and the sequences as a value'''
     with open(fasta_file, 'r') as f: # opens file in read mode
         for line in f: #iterates wach line of the file 
             if line.startswith('>'):   #If the line starts with ">", represents the header line for a sequence
                 name = line.strip()[1:] #this line extracts everything after the ">" character
                 sequences[name] = '' #it stablishes a connection between 'name' as a key and '' as a value
             else:
-                sequences[name] += line.strip() '''If the line doesn't start with '>', the function adds the line as                               value to the "name" key'''
+                sequences[name] += line.strip() '''If the line doesn't start with '>', the function adds the line as value to the "name" key'''
     return sequences #returns dictionary with the names and sequences.
 ```
 Function make_nexus_data_header(sequences)
