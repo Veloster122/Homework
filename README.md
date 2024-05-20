@@ -2,10 +2,14 @@
 code and readme file for ASB Homework
 
 **Introduction**
+
 We made a code that transform Fasta file into Nexus file and then, we tested each function using pytest.
+
 **Code usage in terminal:**
+
 Converter.py:
 ```python Converter.py <fasta_file>```
+
 test_Converter.py:
 ```python test_Converter.py <fasta_file>```
 
