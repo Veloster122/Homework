@@ -14,6 +14,7 @@ test_Converter.py:
 ```python test_Converter.py <fasta_file>```
 
 **Function's functionallity**
+
 Function read_file(fasta_file)
 ```
 def read_fasta(fasta_file): #this function takes a fasta file you want to read
